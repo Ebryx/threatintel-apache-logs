@@ -9,5 +9,4 @@ Install Python3 and Pip3 first and then perform these steps in order on Linux to
 8. Further information on how to execute the respective scripts can be found using following commands:
 	8.1. 'python3 ip-ti.py -h'
 	8.2. 'python3 send_logs_to_logmanager.py -h'
-9. To access Kibana use the following URL: '45.76.217.146:56065'
-10. Import 'es-material.json' from direcroty 'elasticsearch-material' into Elasticsearch to setup all the dashboards & visualizations
+9. Import 'es-material.json' from direcroty 'elasticsearch-material' into Elasticsearch to setup all the dashboards & visualizations
