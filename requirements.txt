@@ -1,0 +1,12 @@
+wheel
+setuptools
+requests
+apache-log-parser
+jinja2
+prettytable
+OTXv2
+ipwhois
+geoip2
+ipaddress
+whois
+elasticsearch
