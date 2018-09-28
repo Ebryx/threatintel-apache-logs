@@ -28,10 +28,10 @@ def setup_argparse():
 	parser = argparse.ArgumentParser(
 		description='Before running this script, ensure that you have ran the instructions mentioned in Readme.md and have the IP and port for elasticsearch. \
 		This script requires the output CSV file from ip-ti.py script and the related log entries directory that is generated alongwith the CSV file. \
-		Optionally Requires path to output file that\'ll contain the logs for this script.\nImportant URLs: \nTo view Kibana: \'45.76.217.146:56065\'\nTo send logs to Elasticsearch: \'45.76.217.146:45654\'\n\n', 
+		Optionally Requires path to output file that\'ll contain the logs for this script.\nImportant URLs: \nTo view Kibana: \'IP:56065\'\nTo send logs to Elasticsearch: \'IP:Port\'\n\n', 
 		epilog="""All's well that ends well.""",
 		usage="""Example:
-		1. python3 {0} -ex ti-index-2018-08-29-01 -ei 45.76.217.146 -ep 45654 -id output-1531851538 -if output-1531851538/ti-output-csv-1531851538.csv'""".format(str(__file__)))
+		1. python3 {0} -ex <index-name> -ei <IP> -ep <port> -id output-1531851538 -if output-1531851538/ti-output-csv-1531851538.csv'""".format(str(__file__)))
 	parser.add_argument('--in_file', '-if', '-IF', '-IN_FILE', required=True,
 						help='path/to/name/of/input/file that is actually the output file from ip-ti.py script (ti-output-csv-<XXXXXXXX>.csv)')
 	parser.add_argument('--in_dir', '-id', required=True,
